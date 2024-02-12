@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Підрахунок слів</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        main {
+            padding: 20px;
+            margin: 0 auto;
+            
+            max-width: 250px;
+            
+            background-color: #f0f0f0;
+            /* Сірий фон форми */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 91%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        #wordCountResult {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffe6cc;
+            /* Заливка фону для результату */
+            border: 1px solid #ffc107;
+            /* Обведення для результату */
+            border-radius: 5px;
+        }
+        div{
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Підрахунок слів</h1>
+
+    </header>
+
+    <main>
+        <form id="wordCountForm">
+            <label for="textInput">Введіть текст:</label>
+            <textarea id="textInput" name="textInput" rows="5" cols="50" required></textarea>
+            <div id="wordCountResult"></div>
+            <button type="button" onclick="countWords()">Обчислити кількість слів</button>
+        </form>
+
+        
+        <button onclick="location.href='index.html'">На головну</button>
+
+    </main>
+
+    <script src="../script/script.js"></script>
+</body>
+
+</html>
